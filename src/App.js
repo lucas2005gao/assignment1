@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom';
+
 import LoginView from "./pages/loginView";
 import HomeView from "./pages/homeView";
 import PageNotFoundView from "./pages/pageNotFoundView";
@@ -20,7 +22,7 @@ function App() {
               <Navbar />
               <HomeView />
             </Route>
-            
+
             {/* Fallback - if none of the above routes are hit */}
             <Route>
               <PageNotFoundView />
@@ -31,7 +33,7 @@ function App() {
         <div className="circle1" />
         <div className="circle2" />
       </div>
-    </Router>
+    </ Router>
   );
 }
 
